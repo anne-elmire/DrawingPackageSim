@@ -1,6 +1,4 @@
-﻿using DrawingPackageSim.Widgets.Helpers;
-
-namespace DrawingPackageSim.Widgets;
+﻿namespace DrawingPackageSim.Widgets;
 
 public class EllipseWidget : IWidget
 {
@@ -14,12 +12,15 @@ public class EllipseWidget : IWidget
     {
         X = x;
         Y = y;
-
-        diameterH.ValidateDimension();
-        DiameterH = diameterH;
-
-        diameterV.ValidateDimension();
-        DiameterV = diameterV;
+        if (diameterH > 0 && diameterV > 0)
+        {
+            DiameterH = diameterH;
+            DiameterV = diameterV;
+        }
+        else
+        {
+            throw new ArgumentException("The horizontal and vertical diameters of an ellipse must be positive integers");
+        }
     }
 
     public override string ToString()

@@ -1,21 +1,23 @@
-﻿using DrawingPackageSim.Widgets.Helpers;
-
-namespace DrawingPackageSim.Widgets;
+﻿namespace DrawingPackageSim.Widgets;
 
 public class SquareWidget : IWidget
 {
     public string Name { get { return "Square"; } }
     public int X { get; set; }
     public int Y { get; set; }
-    public object Size { get; set; }
-
+    public int Size { get; set; }
     public SquareWidget(int x, int y, int size)
     {
         X = x;
         Y = y;
-
-        size.ValidateDimension();
-        Size = size;
+        if (size > 0)
+        {
+            Size = size;
+        }
+        else
+        {
+            throw new ArgumentException("The size of a square must be a positive integer");
+        }
     }
 
     public override string ToString()

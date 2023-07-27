@@ -1,6 +1,4 @@
-﻿using DrawingPackageSim.Widgets.Helpers;
-
-namespace DrawingPackageSim.Widgets;
+﻿namespace DrawingPackageSim.Widgets;
 
 public class RectangleWidget : IWidget
 {
@@ -9,16 +7,20 @@ public class RectangleWidget : IWidget
     public int Y { get; set; }
     public int Width { get; set; }
     public int Height { get; set; }
+
     public RectangleWidget(int x, int y, int width, int height)
     {
         X = x;
         Y = y;
-
-        width.ValidateDimension();
-        Width = width;
-
-        height.ValidateDimension();
-        Height = height;
+        if (width > 0 && height > 0)
+        {
+            Width = width;
+            Height = height;
+        }
+        else
+        {
+            throw new ArgumentException("The height and width of a rectangle must be positive integers");
+        }
     }
 
     public override string ToString()

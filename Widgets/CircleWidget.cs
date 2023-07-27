@@ -1,6 +1,4 @@
-﻿using DrawingPackageSim.Widgets.Helpers;
-
-namespace DrawingPackageSim.Widgets;
+﻿namespace DrawingPackageSim.Widgets;
 
 public class CircleWidget : IWidget
 {
@@ -13,9 +11,14 @@ public class CircleWidget : IWidget
     {
         X = x;
         Y = y;
-
-        diameter.ValidateDimension();
-        Diameter = diameter;
+        if (diameter > 0)
+        {
+            Diameter = diameter;
+        }
+        else
+        {
+            throw new ArgumentException("The diameter of a circle must be a postive integer");
+        }
     }
 
     public override string ToString()
