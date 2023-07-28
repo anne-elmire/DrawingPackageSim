@@ -13,7 +13,7 @@ public static class DrawingHelper
         }
         else
         {
-            Console.WriteLine($"Could not add rectangle widget with a width of {width} and height of {height} as width and height must be positive integers.");
+            Console.WriteLine($"ERROR: Could not add rectangle widget with a width of {width} and height of {height} as width and height must be positive integers.");
         }
         return drawing;
     }
@@ -26,7 +26,7 @@ public static class DrawingHelper
         }
         else
         {
-            Console.WriteLine($"Could not add square widget with a size of {size} as size must be a positive integer.");
+            Console.WriteLine($"ERROR: Could not add square widget with a size of {size} as size must be a positive integer.");
         }
         return drawing;
     }
@@ -39,7 +39,7 @@ public static class DrawingHelper
         }
         else
         {
-            Console.WriteLine($"Could not add square widget with a horizontal diameter of {diameterH} " +
+            Console.WriteLine($"ERROR: Could not add square widget with a horizontal diameter of {diameterH} " +
                 $"and a vertical diameter of {diameterV} as diameters must be positive integers.");
         }
         return drawing;
@@ -53,7 +53,7 @@ public static class DrawingHelper
         }
         else
         {
-            Console.WriteLine($"Could not add circle widget with a diameter of {diameter} as diameter must be a positive integer.");
+            Console.WriteLine($"ERROR: Could not add circle widget with a diameter of {diameter} as diameter must be a positive integer.");
         }
         return drawing;
     }
