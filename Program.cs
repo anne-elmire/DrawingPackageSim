@@ -1,6 +1,4 @@
-﻿using DrawingPackageSim.Widgets;
-
-namespace DrawingPackageSim;
+﻿namespace DrawingPackageSim;
 
 static class Program
 {
