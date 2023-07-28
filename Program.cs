@@ -1,10 +1,13 @@
-﻿using DrawingPackageSim.Widgets;
+﻿namespace DrawingPackageSim;
 
-namespace DrawingPackageSim;
-
-static class Program
+public static class Program
 {
     static void Main()
+    {
+        CreateRequiredDrawing();
+    }
+
+    public static void CreateRequiredDrawing()
     {
         List<IWidget> drawing = new();
 
