@@ -27,15 +27,3 @@ public class TextboxWidget : IWidget
         => $"{Name} ({X},{Y}) {nameof(BoundingRectangle.Width)}={BoundingRectangle.Width}" +
                 $" {nameof(BoundingRectangle.Height)}={BoundingRectangle.Height} {nameof(Text)}=\"{Text}\"";
 }
-
-public class BoundingRectangle
-{
-    public int Width { get; set; }
-    public int Height { get; set; }
-
-    public BoundingRectangle(int width, int height)
-    {
-        Width = width;
-        Height = height;
-    }
-}

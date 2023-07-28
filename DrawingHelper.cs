@@ -1,5 +1,4 @@
 ﻿using DrawingPackageSim.Widgets;
-using System.Data;
 
 namespace DrawingPackageSim;
 
@@ -66,7 +65,7 @@ public static class DrawingHelper
         }
         else
         {
-            Console.WriteLine($"Could not add textbox widget with a width of {width} and height of {height} as width and height must be positive integers.");
+            Console.WriteLine($"ERROR: Could not add textbox widget with a width of {width} and height of {height} as width and height must be positive integers.");
         }
         return drawing;
     }

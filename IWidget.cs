@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace DrawingPackageSim;
+﻿namespace DrawingPackageSim;
 
 public interface IWidget
 {

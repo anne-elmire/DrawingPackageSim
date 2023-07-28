@@ -2,12 +2,7 @@
 
 public static class Program
 {
-    static void Main()
-    {
-        CreateRequiredDrawing();
-    }
-
-    public static void CreateRequiredDrawing()
+    public static void Main()
     {
         List<IWidget> drawing = new();
 
