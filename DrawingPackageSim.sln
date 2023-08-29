@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrawingPackageSim", "DrawingPackageSim.csproj", "{1427B614-8EAB-4173-8B5F-3D0391859A7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingPackageSim.Tests", "..\DrawingPackageSim.Tests\DrawingPackageSim.Tests.csproj", "{9FB2440B-A774-4D8E-9543-1309417BD3E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrawingPackageSim.Tests", "..\DrawingPackageSim.Tests\DrawingPackageSim.Tests.csproj", "{9FB2440B-A774-4D8E-9543-1309417BD3E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
